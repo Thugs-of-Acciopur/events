@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+      <form>
+            <input type="text" name="name" id="name" placeholder="Enter your name" />
+            <input type="email" name="email" id="email" placeholder="Enter your email" />
+          <button type="submit">Submit</button>
+      </form>
+
+      <script>
+          // let form = document.querySelector('form');
+          // let button = document.querySelector('button');
+
+          // form.addEventListener("submit", ()=>{
+          //     alert("Form Submitted");
+          // })
+
+          // button.addEventListener("click", ()=>{
+          //     alert("Button Clicked");
+          // })
+
+          let name_box = document.querySelector('#name');
+          // let count= 0 
+          // name_box.addEventListener("change", ()=>{
+          //      count++
+          //      console.log("Changes", count);
+          // })
+
+          name_box.addEventListener("blur", (event_details)=>{
+                 let target = event_details.target;
+                 target.style.border = "2px solid red";
+          })
+
+
+      </script>
+</body>
+</html>
+
+
+<!-- // button =>  click event 
+// form => submit event 
+//  input => change event 
+// blur event => when you click outside the input field -->
